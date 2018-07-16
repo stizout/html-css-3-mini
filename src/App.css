@@ -1,5 +1,4 @@
 .app {
-  text-align: center;
   background-image: url('https://blackrockdigital.github.io/startbootstrap-grayscale/img/bg-masthead.jpg');
   background-position: center;
   background-size: cover;
@@ -22,6 +21,38 @@ nav {
 
 .large {
   display: none;
+}
+
+.animations {
+  display: flex;
+  justify-content: space-around;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: violet;
+  font-family: 'Raleway', sans-serif;
+}
+
+.my-animation {
+  animation-name: color-slide;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes color-slide {
+  0% {
+    background-color: violet;
+    font-weight: 100;
+  }
+
+  100% {
+    background-color: green;
+    font-weight: 900;
+    transform: rotate(3turn) rotateY(360deg);
+  }
 }
 
 @media (min-width: 850px) {
