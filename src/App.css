@@ -1,0 +1,41 @@
+.app {
+  text-align: center;
+  background-image: url('https://blackrockdigital.github.io/startbootstrap-grayscale/img/bg-masthead.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+nav {
+  background-color: white;
+  height: 50px;
+  display: flex;
+  justify-content: space-between; /* This puts mystyle site and menu on different sides of the navbar */
+  align-items: center; /* this puts them vertically center */
+  padding: 0 20px;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.large {
+  display: none;
+}
+
+@media (min-width: 850px) {
+  .large {
+    display: initial;
+  }
+  .small {
+    display: none;
+  }
+
+  nav {
+    background: transparent;
+    height: 80px;
+    color: white;
+    padding: 0 80px;
+  }
+}
